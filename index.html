@@ -3,490 +3,392 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Asteroid aiuta le aziende a eliminare processi manuali, rischi operativi e inefficienze con analisi, automazione, integrazioni tra sistemi e software su misura.">
-    <title>Asteroid | Servizi IT per processi piu veloci</title>
+    <meta name="description" content="Asteroid trasforma processi manuali in flussi digitali automatici per PMI: integrazioni tra sistemi, automazioni operative, analisi processi e software su misura.">
+    <title>Asteroid | Automazioni, integrazioni e software su misura per PMI</title>
     <link rel="icon" href="assets/asteroid-logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://www.asteroidcode.it/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0e1220">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Asteroid">
+    <meta property="og:title" content="Asteroid | Automazioni, integrazioni e software su misura per PMI">
+    <meta property="og:description" content="Asteroid trasforma processi manuali in flussi digitali automatici: integrazioni tra sistemi, automazioni, analisi processi e software su misura.">
+    <meta property="og:url" content="https://www.asteroidcode.it/">
+    <meta property="og:image" content="https://www.asteroidcode.it/assets/hero-process-map.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Asteroid | Automazioni, integrazioni e software su misura per PMI">
+    <meta name="twitter:description" content="Eliminiamo passaggi manuali, errori e copia-incolla collegando CRM, ERP, gestionali, e-commerce, fogli e API.">
+    <meta name="twitter:image" content="https://www.asteroidcode.it/assets/hero-process-map.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <style>
       :root {
-        --space: #111625;
-        --ink: #1b2233;
-        --paper: #f8f7f2;
-        --line: #dde3e8;
-        --coral: #ff6b4a;
-        --amber: #ffb84d;
-        --cyan: #37d5df;
-        --green: #3eb489;
+        --space:  #0e1220;
+        --ink:    #1a2035;
+        --paper:  #f6f5f0;
+        --line:   #dde1e9;
+        --coral:  #ff5c38;
+        --amber:  #ffb840;
+        --cyan:   #29cdd6;
+        --green:  #35b07e;
+        --radius: 10px;
       }
 
-      html {
-        scroll-behavior: smooth;
-      }
+      *, *::before, *::after { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
 
       body {
         color: var(--ink);
         background: var(--paper);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        letter-spacing: 0;
+        font-family: 'DM Sans', system-ui, sans-serif;
+        font-size: 1rem;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
       }
 
+      h1,h2,h3,h4,h5,h6 {
+        font-family: 'Syne', sans-serif;
+        letter-spacing: -0.02em;
+      }
+
+      /* NAVBAR */
       .navbar {
-        background: rgba(17, 22, 37, 0.9);
-        backdrop-filter: blur(16px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(14,18,32,0.9);
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
       }
-
       .brand-mark {
-        width: 42px;
-        height: 42px;
-        display: block;
-        border-radius: 8px;
+        width: 36px; height: 36px;
+        border-radius: 7px;
         object-fit: contain;
-        box-shadow: 0 0 26px rgba(255, 107, 74, 0.45);
+        box-shadow: 0 0 18px rgba(255,92,56,0.42);
+      }
+      .navbar-brand {
+        font-family: 'Syne', sans-serif;
+        font-weight: 800;
+        font-size: 1.1rem;
+        color: #fff !important;
+      }
+      .nav-link { color: rgba(255,255,255,0.7) !important; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+      .nav-link:hover { color: #fff !important; }
+
+      /* BUTTONS */
+      .btn-asteroid {
+        background: var(--amber); color: #111; border: none;
+        font-family: 'Syne', sans-serif; font-weight: 700;
+        border-radius: var(--radius);
+        transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      }
+      .btn-asteroid:hover {
+        background: #ffc85a; color: #111;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 22px rgba(255,184,64,0.35);
+      }
+      .btn-ghost {
+        background: transparent; color: rgba(255,255,255,0.85);
+        border: 1px solid rgba(255,255,255,0.28);
+        font-family: 'Syne', sans-serif; font-weight: 600;
+        border-radius: var(--radius);
+        transition: border-color 0.2s, color 0.2s, background 0.2s;
+      }
+      .btn-ghost:hover {
+        border-color: rgba(255,255,255,0.7); color: #fff;
+        background: rgba(255,255,255,0.07);
       }
 
-      .nav-link {
-        color: rgba(255, 255, 255, 0.78);
-      }
-
-      .nav-link:hover,
-      .nav-link:focus {
-        color: #fff;
-      }
-
+      /* HERO */
       .hero {
-        min-height: 86svh;
-        position: relative;
-        isolation: isolate;
-        display: flex;
-        align-items: center;
+        min-height: 90svh;
+        position: relative; isolation: isolate;
+        display: flex; align-items: center;
         overflow: hidden;
         background-image:
-          linear-gradient(90deg, rgba(9, 13, 23, 0.94) 0%, rgba(9, 13, 23, 0.78) 42%, rgba(9, 13, 23, 0.2) 100%),
+          linear-gradient(105deg, rgba(9,13,23,0.97) 0%, rgba(9,13,23,0.82) 50%, rgba(9,13,23,0.18) 100%),
           url("assets/hero-process-map.png");
         background-size: cover;
         background-position: center right;
         color: #fff;
-        padding: 7rem 0 5rem;
+        padding: 7.5rem 0 5rem;
       }
-
       .hero::after {
         content: "";
-        position: absolute;
-        inset: auto 0 0;
-        height: 36%;
-        z-index: -1;
-        background: linear-gradient(0deg, rgba(248, 247, 242, 0.98), rgba(248, 247, 242, 0));
+        position: absolute; inset: auto 0 0;
+        height: 38%; z-index: -1;
+        background: linear-gradient(0deg, rgba(246,245,240,0.98), transparent);
         pointer-events: none;
       }
 
       .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
+        display: inline-flex; align-items: center; gap: 0.45rem;
         color: var(--cyan);
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 0.78rem;
-      }
-
-      h1,
-      h2,
-      h3 {
-        letter-spacing: 0;
+        font-family: 'Syne', sans-serif; font-weight: 700;
+        text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.1em;
       }
 
       .hero-title {
-        max-width: 780px;
-        font-size: clamp(3.2rem, 8vw, 7rem);
-        font-weight: 850;
-        line-height: 0.92;
+        font-family: 'Syne', sans-serif;
+        font-size: clamp(2rem, 4.5vw, 3.6rem);
+        font-weight: 800; line-height: 1.0; letter-spacing: -0.03em;
+        max-width: 800px;
       }
+      .hero-title .accent { color: var(--amber); }
 
       .hero-copy {
-        max-width: 660px;
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 1.15rem;
+        max-width: 560px;
+        color: rgba(255,255,255,0.75);
+        font-size: 1.08rem; font-weight: 300; line-height: 1.75;
       }
 
-      .btn-asteroid {
-        --bs-btn-color: #171717;
-        --bs-btn-bg: var(--amber);
-        --bs-btn-border-color: var(--amber);
-        --bs-btn-hover-color: #111;
-        --bs-btn-hover-bg: #ffd071;
-        --bs-btn-hover-border-color: #ffd071;
-        --bs-btn-focus-shadow-rgb: 255, 184, 77;
-        font-weight: 750;
-      }
+      /* TRUST STRIP */
+      .trust-strip { margin-top: -2.6rem; position: relative; z-index: 5; }
 
-      .btn-outline-light {
-        --bs-btn-border-color: rgba(255, 255, 255, 0.45);
-        --bs-btn-hover-color: #111;
+      .trust-grid {
+        display: grid; grid-template-columns: repeat(4,1fr);
+        gap: 1px; background: var(--line);
+        border: 1px solid var(--line); border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: 0 22px 52px rgba(27,34,51,0.09);
       }
+      .trust-cell {
+        background: #fff; padding: 1.5rem 1.2rem;
+        display: flex; flex-direction: column; gap: 0.25rem;
+      }
+      .trust-icon {
+        width: 30px; height: 30px;
+        background: linear-gradient(135deg,rgba(41,205,214,0.18),rgba(255,184,64,0.22));
+        border-radius: 6px; display: inline-grid; place-items: center;
+        margin-bottom: 0.5rem; color: var(--space); font-size: 0.95rem;
+      }
+      .trust-cell strong {
+        font-family: 'Syne', sans-serif; font-size: 1.05rem;
+        font-weight: 800; color: var(--space); letter-spacing: -0.02em;
+      }
+      .trust-cell span { font-size: 0.85rem; color: #6b7693; line-height: 1.4; }
 
-      .metric-strip {
-        margin-top: -2.4rem;
-        position: relative;
-        z-index: 5;
-      }
-
-      .metric-box {
-        min-height: 112px;
-        border: 1px solid var(--line);
-        background: #fff;
-        border-radius: 8px;
-        padding: 1.35rem;
-        box-shadow: 0 18px 45px rgba(27, 34, 51, 0.08);
-      }
-
-      .metric-box strong {
-        display: block;
-        font-size: 1.55rem;
-        color: var(--space);
-      }
-
-      .section-pad {
-        padding: 5.25rem 0;
-      }
+      /* SECTIONS */
+      .section-pad { padding: 5.5rem 0; }
 
       .section-kicker {
-        color: var(--coral);
-        font-weight: 800;
-        text-transform: uppercase;
-        font-size: 0.78rem;
+        font-family: 'Syne', sans-serif; color: var(--coral);
+        font-weight: 700; text-transform: uppercase;
+        font-size: 0.7rem; letter-spacing: 0.1em;
       }
-
       .section-title {
-        font-weight: 820;
-        color: var(--space);
-        font-size: clamp(2rem, 4vw, 3.5rem);
-        line-height: 1;
+        font-family: 'Syne', sans-serif; font-weight: 800; color: var(--space);
+        font-size: clamp(1.85rem, 3.8vw, 3rem); line-height: 1.06; letter-spacing: -0.03em;
       }
 
+      /* SERVICE CARDS */
       .service-card {
-        height: 100%;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #fff;
-        padding: 1.5rem;
-        transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+        height: 100%; border: 1px solid var(--line); border-radius: var(--radius);
+        background: #fff; padding: 1.6rem;
+        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+        position: relative; overflow: hidden;
       }
-
-      .service-card:hover {
-        transform: translateY(-4px);
-        border-color: rgba(255, 107, 74, 0.35);
-        box-shadow: 0 18px 45px rgba(27, 34, 51, 0.1);
+      .service-card::before {
+        content: ""; position: absolute; top:0;left:0;right:0; height: 3px;
+        background: linear-gradient(90deg, var(--coral), var(--amber));
+        opacity: 0; transition: opacity 200ms ease;
       }
-
-      .service-link {
-        display: block;
-        height: 100%;
-        color: inherit;
-        text-decoration: none;
+      .service-card:hover { transform: translateY(-5px); border-color: rgba(255,92,56,0.18); box-shadow: 0 22px 52px rgba(27,34,51,0.11); }
+      .service-card:hover::before { opacity: 1; }
+      .service-link { display:block; height:100%; color:inherit; text-decoration:none; }
+      .service-icon {
+        width:46px;height:46px; display:inline-grid; place-items:center;
+        border-radius:8px; color:var(--space);
+        background: linear-gradient(135deg,rgba(41,205,214,0.18),rgba(255,184,64,0.22));
+        font-size:1.3rem;
       }
-
       .service-more {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        color: var(--coral);
-        font-weight: 800;
+        display:inline-flex; align-items:center; gap:0.4rem;
+        color:var(--coral); font-family:'Syne',sans-serif; font-weight:700; font-size:0.87rem;
       }
 
       .service-highlight {
-        border: 1px solid rgba(255, 107, 74, 0.28);
-        border-radius: 8px;
-        background:
-          linear-gradient(135deg, rgba(255, 107, 74, 0.11), rgba(55, 213, 223, 0.1)),
-          #fff;
-        padding: 1.4rem;
-        box-shadow: 0 18px 45px rgba(27, 34, 51, 0.08);
-      }
-
-      .service-highlight-icon {
-        width: 54px;
-        height: 54px;
-        display: inline-grid;
-        place-items: center;
-        flex: 0 0 auto;
-        border-radius: 8px;
-        color: #171717;
-        background: linear-gradient(135deg, var(--amber), var(--coral));
-        font-size: 1.45rem;
-      }
-
-      .service-icon {
-        width: 48px;
-        height: 48px;
-        display: inline-grid;
-        place-items: center;
-        border-radius: 8px;
-        color: var(--space);
-        background: linear-gradient(135deg, rgba(55, 213, 223, 0.25), rgba(255, 184, 77, 0.3));
-        font-size: 1.35rem;
-      }
-
-      .integration-band {
-        background:
-          linear-gradient(180deg, #fff 0%, #f8f7f2 100%);
-      }
-
-      .connector-stage {
-        position: relative;
-        overflow: hidden;
-        border-radius: 8px;
-        border: 1px solid rgba(17, 22, 37, 0.12);
-        background:
-          linear-gradient(135deg, rgba(17, 22, 37, 0.96), rgba(20, 47, 49, 0.94));
-        padding: 1.25rem;
-        box-shadow: 0 22px 55px rgba(27, 34, 51, 0.18);
-      }
-
-      .connector-stage::before {
-        content: "";
-        position: absolute;
-        inset: 14%;
-        border: 1px solid rgba(55, 213, 223, 0.2);
-        border-radius: 8px;
-        background:
-          linear-gradient(90deg, transparent 0 31%, rgba(55, 213, 223, 0.16) 31% 32%, transparent 32% 68%, rgba(55, 213, 223, 0.16) 68% 69%, transparent 69%),
-          linear-gradient(0deg, transparent 0 31%, rgba(255, 184, 77, 0.16) 31% 32%, transparent 32% 68%, rgba(255, 184, 77, 0.16) 68% 69%, transparent 69%);
-        pointer-events: none;
-      }
-
-      .connector-grid {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1rem;
-        z-index: 1;
-      }
-
-      .system-node {
-        min-height: 96px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.45rem;
-        text-align: center;
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.08);
-        color: rgba(255, 255, 255, 0.86);
-        padding: 0.8rem;
-      }
-
-      .system-node i {
-        color: var(--cyan);
-        font-size: 1.45rem;
-      }
-
-      .system-node span {
-        font-size: 0.92rem;
-        font-weight: 750;
-      }
-
-      .node-core {
-        background: linear-gradient(135deg, rgba(255, 107, 74, 0.95), rgba(255, 184, 77, 0.95));
-        color: #141414;
-        box-shadow: 0 0 35px rgba(255, 107, 74, 0.36);
-      }
-
-      .node-core i {
-        color: #141414;
-      }
-
-      .node-source,
-      .node-target {
-        border-color: rgba(55, 213, 223, 0.45);
-      }
-
-      .integration-card {
-        height: 100%;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #fff;
-        padding: 1.35rem;
-        box-shadow: 0 14px 36px rgba(27, 34, 51, 0.07);
-      }
-
-      .integration-card > i {
-        display: inline-grid;
-        place-items: center;
-        width: 44px;
-        height: 44px;
-        margin-bottom: 1rem;
-        border-radius: 8px;
-        background: rgba(255, 107, 74, 0.12);
-        color: var(--coral);
-        font-size: 1.2rem;
-      }
-
-      .band-dark {
-        color: #fff;
-        background:
-          radial-gradient(circle at 18% 20%, rgba(255, 107, 74, 0.22), transparent 34%),
-          linear-gradient(135deg, #111625 0%, #242132 55%, #132f31 100%);
-      }
-
-      .timeline-step {
-        display: grid;
-        grid-template-columns: 56px 1fr;
-        gap: 1rem;
-        align-items: start;
-        padding: 1.25rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-      }
-
-      .timeline-step:last-child {
-        border-bottom: 0;
-      }
-
-      .step-number {
-        width: 44px;
-        height: 44px;
-        display: inline-grid;
-        place-items: center;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.11);
-        color: var(--cyan);
-        font-weight: 800;
-      }
-
-      .process-panel {
-        border: 1px solid rgba(255, 255, 255, 0.16);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255,92,56,0.2); border-radius: var(--radius);
+        background: linear-gradient(135deg,rgba(255,92,56,0.06),rgba(41,205,214,0.06));
         padding: 1.5rem;
       }
-
-      .process-chip {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        margin: 0.35rem;
-        padding: 0.58rem 0.76rem;
-        border-radius: 8px;
-        color: #fff;
-        border: 1px solid rgba(255, 255, 255, 0.16);
-        background: rgba(255, 255, 255, 0.1);
-        font-size: 0.95rem;
+      .service-highlight-icon {
+        width:52px;height:52px; display:inline-grid; place-items:center;
+        flex: 0 0 auto; border-radius:8px; color:#111;
+        background: linear-gradient(135deg,var(--amber),var(--coral)); font-size:1.4rem;
       }
 
-      .outcome {
-        display: flex;
-        gap: 1rem;
-        padding: 1.1rem 0;
-        border-bottom: 1px solid var(--line);
-      }
+      /* INTEGRATION VISUAL */
+      .integration-band { background: linear-gradient(180deg,#fff 0%,var(--paper) 100%); }
 
-      .outcome:last-child {
-        border-bottom: 0;
-      }
-
-      .outcome i {
-        color: var(--green);
-        font-size: 1.45rem;
-      }
-
-      .cta-band {
-        color: #fff;
-        background:
-          linear-gradient(90deg, rgba(17, 22, 37, 0.9), rgba(17, 22, 37, 0.72)),
-          url("assets/hero-impact-workflow.png");
-        background-size: cover;
-        background-position: center;
-      }
-
-      .contact-card {
-        border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        background: rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(12px);
+      .connector-stage {
+        position: relative; overflow: hidden; border-radius: var(--radius);
+        border: 1px solid rgba(17,22,37,0.12);
+        background: linear-gradient(135deg,rgba(14,18,32,0.97),rgba(18,48,50,0.95));
         padding: 1.25rem;
+        box-shadow: 0 24px 60px rgba(27,34,51,0.2);
+      }
+      .connector-stage::before {
+        content:""; position:absolute; inset:12%;
+        border:1px solid rgba(41,205,214,0.18); border-radius:8px;
+        background:
+          linear-gradient(90deg,transparent 0 31%,rgba(41,205,214,0.12) 31% 32%,transparent 32% 68%,rgba(41,205,214,0.12) 68% 69%,transparent 69%),
+          linear-gradient(0deg,transparent 0 31%,rgba(255,184,64,0.12) 31% 32%,transparent 32% 68%,rgba(255,184,64,0.12) 68% 69%,transparent 69%);
+        pointer-events:none;
+      }
+      .connector-grid {
+        position:relative; display:grid;
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        gap:1rem; z-index:1;
+      }
+      .system-node {
+        min-height:96px; display:flex; flex-direction:column;
+        align-items:center; justify-content:center; gap:0.4rem;
+        text-align:center; border:1px solid rgba(255,255,255,0.12);
+        border-radius:8px; background:rgba(255,255,255,0.07);
+        color:rgba(255,255,255,0.85); padding:0.8rem;
+        transition: background 0.2s;
+      }
+      .system-node:hover { background: rgba(255,255,255,0.12); }
+      .system-node i { color:var(--cyan); font-size:1.4rem; }
+      .system-node span { font-size:0.88rem; font-weight:500; font-family:'Syne',sans-serif; }
+      .node-core {
+        background: linear-gradient(135deg,rgba(255,92,56,0.9),rgba(255,184,64,0.9));
+        color:#111; box-shadow:0 0 32px rgba(255,92,56,0.32);
+      }
+      .node-core i { color:#111; }
+      .node-source,.node-target { border-color:rgba(41,205,214,0.4); }
+
+      .integration-card {
+        height:100%; border:1px solid var(--line); border-radius:var(--radius);
+        background:#fff; padding:1.35rem;
+        box-shadow: 0 14px 36px rgba(27,34,51,0.07);
+      }
+      .integration-card > i {
+        display:inline-grid; place-items:center;
+        width:42px;height:42px; margin-bottom:1rem; border-radius:8px;
+        background:rgba(255,92,56,0.1); color:var(--coral); font-size:1.15rem;
       }
 
-      .form-control,
-      .form-select {
-        border-radius: 8px;
-        border-color: rgba(255, 255, 255, 0.18);
-        background-color: rgba(255, 255, 255, 0.92);
+      /* METODO DARK BAND */
+      .band-dark {
+        color:#fff;
+        background:
+          radial-gradient(circle at 16% 18%, rgba(255,92,56,0.2), transparent 34%),
+          linear-gradient(135deg,#0e1220 0%,#20203a 55%,#102e30 100%);
+      }
+      .timeline-step {
+        display:grid; grid-template-columns:52px 1fr; gap:1rem;
+        align-items:start; padding:1.25rem 0;
+        border-bottom:1px solid rgba(255,255,255,0.12);
+      }
+      .timeline-step:last-child { border-bottom:0; }
+      .step-number {
+        width:44px;height:44px; display:inline-grid; place-items:center;
+        border-radius:8px; background:rgba(255,255,255,0.1);
+        color:var(--cyan); font-weight:800; font-family:'Syne',sans-serif; font-size:0.95rem;
+      }
+      .process-panel {
+        border:1px solid rgba(255,255,255,0.14); border-radius:var(--radius);
+        background:rgba(255,255,255,0.07); padding:1.4rem;
+      }
+      .process-chip {
+        display:inline-flex; align-items:center; gap:0.4rem;
+        margin:0.3rem; padding:0.55rem 0.8rem; border-radius:7px;
+        color:#fff; border:1px solid rgba(255,255,255,0.14);
+        background:rgba(255,255,255,0.08); font-size:0.9rem;
+        font-family:'Syne',sans-serif; font-weight:600;
       }
 
-      footer {
-        background: #0d111d;
-        color: rgba(255, 255, 255, 0.7);
+      /* RISULTATI */
+      .outcome {
+        display:flex; gap:1rem; padding:1.1rem 0;
+        border-bottom:1px solid var(--line);
+      }
+      .outcome:last-child { border-bottom:0; }
+      .outcome i { color:var(--green); font-size:1.4rem; flex-shrink:0; margin-top:0.1rem; }
+
+      /* CTA BAND */
+      .cta-band {
+        color:#fff;
+        background:
+          linear-gradient(100deg,rgba(14,18,32,0.93),rgba(14,18,32,0.75)),
+          url("assets/hero-impact-workflow.png");
+        background-size:cover; background-position:center;
       }
 
-      @media (max-width: 991.98px) {
+      /* CONTACT FORM */
+      .contact-card {
+        border-radius:var(--radius); border:1px solid rgba(255,255,255,0.14);
+        background:rgba(255,255,255,0.07); backdrop-filter:blur(12px);
+        padding:1.5rem;
+      }
+      .form-control,.form-select {
+        border-radius:8px; border-color:rgba(255,255,255,0.2);
+        background-color:rgba(255,255,255,0.94); font-family:'DM Sans',sans-serif;
+      }
+      .form-control:focus,.form-select:focus {
+        border-color:var(--amber); box-shadow:0 0 0 3px rgba(255,184,64,0.2);
+      }
+      .form-label { font-family:'Syne',sans-serif; font-size:0.85rem; font-weight:600; }
+
+
+      /* ARTICLE PREVIEW */
+      .article-preview-card {
+        height: 100%; border: 1px solid var(--line); border-radius: var(--radius);
+        background: #fff; padding: 1.45rem; box-shadow: 0 14px 38px rgba(27,34,51,0.07);
+        transition: transform 220ms ease, box-shadow 220ms ease;
+      }
+      .article-preview-card:hover { transform: translateY(-4px); box-shadow: 0 24px 56px rgba(27,34,51,0.12); }
+      .article-preview-card a { color: inherit; text-decoration: none; }
+      .article-preview-meta { font-size: 0.75rem; color: var(--coral); font-family:'Syne',sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+
+      /* FOOTER */
+      footer { background:#090d17; color:rgba(255,255,255,0.6); }
+
+      /* RESPONSIVE */
+      @media (max-width:991.98px) {
         .hero {
-          min-height: 82svh;
+          min-height:82svh;
           background-image:
-            linear-gradient(180deg, rgba(9, 13, 23, 0.96) 0%, rgba(9, 13, 23, 0.82) 52%, rgba(9, 13, 23, 0.46) 100%),
+            linear-gradient(180deg,rgba(9,13,23,0.97) 0%,rgba(9,13,23,0.85) 55%,rgba(9,13,23,0.45) 100%),
             url("assets/hero-process-map.png");
-          background-position: center;
-          padding-top: 6.5rem;
+          background-position:center; padding-top:7rem;
         }
-
-        .hero-title {
-          font-size: clamp(3rem, 16vw, 5.3rem);
-        }
-
-        .metric-strip {
-          margin-top: 0;
-        }
-
-        .connector-grid {
-          grid-template-columns: repeat(3, minmax(92px, 1fr));
-          gap: 0.75rem;
-        }
-
-        .system-node {
-          min-height: 82px;
-          padding: 0.65rem;
-        }
+        .trust-grid { grid-template-columns:repeat(2,1fr); }
+        .trust-strip { margin-top:0; }
+        .connector-grid { grid-template-columns:repeat(3,minmax(88px,1fr)); gap:0.7rem; }
+        .system-node { min-height:80px; padding:0.6rem; }
+      }
+      @media (max-width:575.98px) {
+        .section-pad { padding:4rem 0; }
+        .hero-copy { font-size:1rem; }
+        .connector-stage { padding:0.8rem; }
+        .connector-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+        .node-core { grid-column:span 2; }
+        .timeline-step { grid-template-columns:44px 1fr; }
       }
 
-      @media (max-width: 575.98px) {
-        .hero {
-          min-height: 80svh;
-          padding-bottom: 4rem;
-        }
-
-        .hero-copy {
-          font-size: 1rem;
-        }
-
-        .section-pad {
-          padding: 4rem 0;
-        }
-
-        .timeline-step {
-          grid-template-columns: 46px 1fr;
-        }
-
-        .connector-stage {
-          padding: 0.85rem;
-        }
-
-        .connector-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .node-core {
-          grid-column: span 2;
-        }
-      }
+      /* FADE-IN ANIMATION */
+      @keyframes fadeUp { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+      .hero-content > * { animation: fadeUp 0.7s both; }
+      .hero-content > *:nth-child(1) { animation-delay:0.05s; }
+      .hero-content > *:nth-child(2) { animation-delay:0.18s; }
+      .hero-content > *:nth-child(3) { animation-delay:0.3s; }
+      .hero-content > *:nth-child(4) { animation-delay:0.42s; }
     </style>
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Asteroid","url":"https://www.asteroidcode.it/","logo":"https://www.asteroidcode.it/assets/asteroid-logo.svg","email":"info@asteroid.it","description":"Asteroid realizza integrazioni, automazioni, analisi processi e software su misura per PMI.","sameAs":[]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Asteroid","url":"https://www.asteroidcode.it/","inLanguage":"it-IT"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Automazioni, integrazioni e software su misura per PMI","provider":{"@type":"Organization","name":"Asteroid","url":"https://www.asteroidcode.it/"},"areaServed":"Italia","serviceType":["Analisi processi aziendali","Integrazioni tra sistemi","Automazione procedure","Software su misura"],"description":"Trasformiamo procedure manuali e ripetitive in flussi digitali misurabili, collegando sistemi aziendali e creando software dedicato."}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quanto costa automatizzare un processo aziendale?","acceptedAnswer":{"@type":"Answer","text":"Il costo dipende da sistemi coinvolti, regole, eccezioni e livello di integrazione necessario. Per questo Asteroid parte da un audit o da uno sprint con scope definito, così il preventivo è legato a un risultato concreto."}},{"@type":"Question","name":"Quanto tempo serve per vedere un primo risultato?","acceptedAnswer":{"@type":"Answer","text":"Per interventi mirati come integrazioni semplici, report automatici o eliminazione di passaggi manuali ricorrenti, il primo rilascio può arrivare in poche settimane. I progetti più ampi vengono divisi in sprint progressivi."}},{"@type":"Question","name":"Asteroid sostituisce i software che uso già?","acceptedAnswer":{"@type":"Answer","text":"No. L'obiettivo è valorizzare gli strumenti già presenti, come CRM, ERP, gestionali, e-commerce, fogli, database e API, collegandoli tra loro quando possibile."}},{"@type":"Question","name":"Che tipo di aziende può aiutare Asteroid?","acceptedAnswer":{"@type":"Answer","text":"Asteroid lavora con PMI che hanno processi ripetitivi, dati duplicati, passaggi manuali tra sistemi, report costruiti a mano o strumenti non collegati tra loro."}}]}</script>
   </head>
   <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#top" aria-label="Asteroid">
-          <img class="brand-mark" src="assets/asteroid-logo.svg" alt="">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#top" aria-label="Asteroid">
+          <img class="brand-mark" src="assets/asteroid-logo.svg" alt="Logo Asteroid">
           <span>Asteroid</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Apri menu">
@@ -497,10 +399,12 @@
             <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
             <li class="nav-item"><a class="nav-link" href="#metodo">Metodo</a></li>
             <li class="nav-item"><a class="nav-link" href="pacchetti.html">Pacchetti</a></li>
+            <li class="nav-item"><a class="nav-link" href="articoli.html">Articoli</a></li>
             <li class="nav-item"><a class="nav-link" href="#risultati">Risultati</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
             <li class="nav-item ms-lg-2">
-              <a class="btn btn-sm btn-asteroid" href="#contatto">
-                <i class="bi bi-send-fill me-1"></i> Contatto
+              <a class="btn btn-sm btn-asteroid px-3" href="#contatto">
+                <i class="bi bi-send-fill me-1"></i> Scrivici
               </a>
             </li>
           </ul>
@@ -509,68 +413,69 @@
     </nav>
 
     <main id="top">
+
+      <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <div class="col-lg-8">
-            <p class="eyebrow mb-3"><i class="bi bi-lightning-charge-fill"></i> Automazione, integrazioni e software IT</p>
-            <h1 class="hero-title mb-4">Asteroid</h1>
-            <p class="display-6 fw-bold mb-3">Estingui i dinosauri dentro la tua azienda.</p>
-            <p class="hero-copy mb-4">
-              Colleghiamo gestionali, CRM, fogli, database, e-commerce e servizi cloud per trasformare procedure manuali e colli di bottiglia in flussi digitali rapidi, misurabili e controllabili.
+          <div class="hero-content col-lg-8">
+            <p class="eyebrow mb-3"><i class="bi bi-lightning-charge-fill"></i> Integrazioni · Automazioni · Software IT</p>
+            <h1 class="hero-title mb-4">
+              I tuoi processi manuali<br>hanno i giorni <span class="accent">contati.</span>
+            </h1>
+            <p class="hero-copy mb-5">
+              Colleghiamo i sistemi che usi già — CRM, ERP, gestionali, e-commerce, fogli, API — e trasformiamo le procedure lente e ripetitive in flussi digitali misurabili. Meno errori, meno attesa, più controllo.
             </p>
             <div class="d-flex flex-column flex-sm-row gap-3">
               <a class="btn btn-asteroid btn-lg px-4" href="#contatto">
-                <i class="bi bi-rocket-takeoff-fill me-2"></i> Avvia l'analisi
+                <i class="bi bi-rocket-takeoff-fill me-2"></i> Avvia l'analisi gratuita
               </a>
-              <a class="btn btn-outline-light btn-lg px-4" href="#servizi">
-                <i class="bi bi-grid-1x2-fill me-2"></i> Vedi i servizi
+              <a class="btn btn-ghost btn-lg px-4" href="#servizi">
+                <i class="bi bi-grid-1x2-fill me-2"></i> Cosa facciamo
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="metric-strip">
+      <!-- TRUST STRIP -->
+      <section class="trust-strip">
         <div class="container">
-          <div class="row g-3">
-            <div class="col-md-6 col-xl-3">
-              <div class="metric-box">
-                <strong>Processi</strong>
-                <span class="text-secondary">mappati, misurati e semplificati prima di scrivere codice.</span>
-              </div>
+          <div class="trust-grid">
+            <div class="trust-cell">
+              <span class="trust-icon"><i class="bi bi-diagram-3-fill"></i></span>
+              <strong>Analisi processi</strong>
+              <span>Mappiamo i flussi reali prima di scrivere una riga di codice.</span>
             </div>
-            <div class="col-md-6 col-xl-3">
-              <div class="metric-box">
-                <strong>Integrazioni</strong>
-                <span class="text-secondary">tra sistemi, servizi cloud, database e strumenti aziendali.</span>
-              </div>
+            <div class="trust-cell">
+              <span class="trust-icon"><i class="bi bi-plug-fill"></i></span>
+              <strong>Integrazioni</strong>
+              <span>Facciamo parlare i sistemi che usi già senza duplicare dati.</span>
             </div>
-            <div class="col-md-6 col-xl-3">
-              <div class="metric-box">
-                <strong>Automazioni</strong>
-                <span class="text-secondary">per ridurre errori, attese e lavoro ripetitivo.</span>
-              </div>
+            <div class="trust-cell">
+              <span class="trust-icon"><i class="bi bi-arrow-repeat"></i></span>
+              <strong>Automazioni</strong>
+              <span>Eliminiamo il lavoro ripetitivo che rallenta e genera errori.</span>
             </div>
-            <div class="col-md-6 col-xl-3">
-              <div class="metric-box">
-                <strong>Software</strong>
-                <span class="text-secondary">su misura per rendere piu veloce cio che conta.</span>
-              </div>
+            <div class="trust-cell">
+              <span class="trust-icon"><i class="bi bi-speedometer2"></i></span>
+              <strong>Software su misura</strong>
+              <span>Strumenti costruiti sul tuo flusso reale, non su un template.</span>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- SERVIZI -->
       <section id="servizi" class="section-pad">
         <div class="container">
-          <div class="row align-items-end mb-4 gy-3">
+          <div class="row align-items-end mb-5 gy-3">
             <div class="col-lg-7">
               <p class="section-kicker mb-2">Servizi</p>
-              <h2 class="section-title mb-0">Via i processi lenti. Dentro sistemi che lavorano.</h2>
+              <h2 class="section-title mb-0">Via i processi lenti.<br>Dentro sistemi che lavorano.</h2>
             </div>
             <div class="col-lg-5">
               <p class="text-secondary mb-0">
-                Asteroid entra nei flussi reali della tua azienda, trova sprechi e rischi, collega gli strumenti che usi gia e costruisce cio che manca.
+                Entriamo nei flussi reali della tua azienda, troviamo sprechi e rischi, colleghiamo gli strumenti che usi già e costruiamo quello che manca.
               </p>
             </div>
           </div>
@@ -580,8 +485,8 @@
               <a class="service-link" href="servizi/valutazione-procedure-rischi.html">
                 <article class="service-card">
                   <span class="service-icon mb-4"><i class="bi bi-clipboard2-check-fill"></i></span>
-                  <h3 class="h5 fw-bold">Valutazione procedure manuali e rischi</h3>
-                  <p class="text-secondary">Analisi di fogli, email, passaggi manuali e punti critici che generano errori o ritardi.</p>
+                  <h3 class="h5 fw-bold">Valutazione procedure e rischi</h3>
+                  <p class="text-secondary">Analizziamo fogli, email e passaggi manuali per trovare dove perdi tempo e dove si nascondono gli errori.</p>
                   <span class="service-more">Approfondisci <i class="bi bi-arrow-right"></i></span>
                 </article>
               </a>
@@ -590,8 +495,8 @@
               <a class="service-link" href="servizi/automazione-procedure.html">
                 <article class="service-card">
                   <span class="service-icon mb-4"><i class="bi bi-arrow-repeat"></i></span>
-                  <h3 class="h5 fw-bold">Automazione di procedure ripetitive</h3>
-                  <p class="text-secondary">Strumenti per automatizzare attivita manuali, ridurre errori e liberare tempo operativo.</p>
+                  <h3 class="h5 fw-bold">Automazione procedure ripetitive</h3>
+                  <p class="text-secondary">Tutto ciò che fai ogni giorno alla stessa maniera può diventare automatico, tracciato e senza errori di digitazione.</p>
                   <span class="service-more">Approfondisci <i class="bi bi-arrow-right"></i></span>
                 </article>
               </a>
@@ -600,8 +505,8 @@
               <a class="service-link" href="servizi/integrazioni-sistemi.html">
                 <article class="service-card">
                   <span class="service-icon mb-4"><i class="bi bi-plug-fill"></i></span>
-                  <h3 class="h5 fw-bold">Integrazioni tra servizi e sistemi</h3>
-                  <p class="text-secondary">Colleghiamo CRM, ERP, gestionali, database, fogli, email, e-commerce, helpdesk e API.</p>
+                  <h3 class="h5 fw-bold">Integrazioni tra sistemi</h3>
+                  <p class="text-secondary">CRM, ERP, gestionali, e-commerce e API che parlano lingue diverse: li facciamo comunicare in automatico.</p>
                   <span class="service-more">Approfondisci <i class="bi bi-arrow-right"></i></span>
                 </article>
               </a>
@@ -610,8 +515,8 @@
               <a class="service-link" href="servizi/software-efficienza.html">
                 <article class="service-card">
                   <span class="service-icon mb-4"><i class="bi bi-speedometer2"></i></span>
-                  <h3 class="h5 fw-bold">Software per efficienza e velocita</h3>
-                  <p class="text-secondary">Applicazioni su misura per accelerare processi interni, decisioni e operativita quotidiana.</p>
+                  <h3 class="h5 fw-bold">Software per efficienza</h3>
+                  <p class="text-secondary">Applicazioni costruite sul tuo flusso di lavoro reale, non su un template pensato per tutti e perfetto per nessuno.</p>
                   <span class="service-more">Approfondisci <i class="bi bi-arrow-right"></i></span>
                 </article>
               </a>
@@ -620,8 +525,8 @@
               <a class="service-link" href="servizi/analisi-processi.html">
                 <article class="service-card">
                   <span class="service-icon mb-4"><i class="bi bi-diagram-3-fill"></i></span>
-                  <h3 class="h5 fw-bold">Analisi di processi</h3>
-                  <p class="text-secondary">Mappatura del flusso end-to-end, KPI essenziali e roadmap tecnica con priorita chiare.</p>
+                  <h3 class="h5 fw-bold">Analisi di processo</h3>
+                  <p class="text-secondary">Mappa end-to-end, KPI essenziali e roadmap tecnica con priorità chiare: sai cosa fare e in che ordine.</p>
                   <span class="service-more">Approfondisci <i class="bi bi-arrow-right"></i></span>
                 </article>
               </a>
@@ -635,25 +540,79 @@
                 <p class="section-kicker mb-1">Pacchetti e ingaggio</p>
                 <h3 class="h4 fw-bold mb-2">Parti da un audit rapido o da un progetto completo</h3>
                 <p class="text-secondary mb-0">
-                  Scegli tra analisi iniziale, sprint di integrazione, automazione guidata o percorso continuativo con manutenzione e miglioramento.
+                  Scegli tra analisi iniziale, sprint di integrazione, automazione guidata o collaborazione continuativa. Ogni percorso parte piccolo e cresce con risultati misurabili.
                 </p>
               </div>
-              <a class="btn btn-asteroid px-4" href="pacchetti.html">
-                <i class="bi bi-arrow-right-circle-fill me-2"></i> Vedi pacchetti
+              <a class="btn btn-asteroid px-4 flex-shrink-0" href="pacchetti.html">
+                <i class="bi bi-arrow-right-circle-fill me-2"></i> Scopri i pacchetti
               </a>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- INTEGRAZIONI -->
+      <section class="section-pad integration-band">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+              <p class="section-kicker mb-2">Integrazioni</p>
+              <h2 class="section-title mb-4">I tuoi sistemi già parlano tra loro. Non lo sanno ancora.</h2>
+              <p class="text-secondary mb-4">
+                Non sostituiamo ciò che funziona. Colleghiamo CRM, ERP, gestionali, database, email, e-commerce, helpdesk e qualsiasi API — e facciamo fluire i dati senza che nessuno debba copiarli a mano.
+              </p>
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="integration-card">
+                    <i class="bi bi-arrow-left-right"></i>
+                    <h4 class="h6 fw-bold mb-1">Sincronizzazione bidirezionale</h4>
+                    <p class="text-secondary mb-0 small">I dati si aggiornano in entrambe le direzioni, in tempo reale o con la frequenza che serve.</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="integration-card">
+                    <i class="bi bi-shield-check-fill"></i>
+                    <h4 class="h6 fw-bold mb-1">Log e controlli</h4>
+                    <p class="text-secondary mb-0 small">Ogni flusso è tracciato. Sai cosa è passato, quando e se c'è stato un problema.</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="integration-card">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <h4 class="h6 fw-bold mb-1">Scalabile</h4>
+                    <p class="text-secondary mb-0 small">Parte da due sistemi, cresce con l'azienda senza riscrivere tutto.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="connector-stage">
+                <div class="connector-grid">
+                  <div class="system-node node-source"><i class="bi bi-table"></i><span>CRM</span></div>
+                  <div class="system-node node-source"><i class="bi bi-shop"></i><span>E-commerce</span></div>
+                  <div class="system-node node-source"><i class="bi bi-envelope-fill"></i><span>Email</span></div>
+                  <div class="system-node node-source"><i class="bi bi-box-seam"></i><span>ERP</span></div>
+                  <div class="system-node node-core"><i class="bi bi-lightning-charge-fill"></i><span>Asteroid</span></div>
+                  <div class="system-node node-target"><i class="bi bi-bar-chart-fill"></i><span>Dashboard</span></div>
+                  <div class="system-node node-target"><i class="bi bi-database-fill"></i><span>Database</span></div>
+                  <div class="system-node node-target"><i class="bi bi-headset"></i><span>Helpdesk</span></div>
+                  <div class="system-node node-target"><i class="bi bi-cpu-fill"></i><span>Automazioni</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- METODO -->
       <section id="metodo" class="section-pad band-dark">
         <div class="container">
           <div class="row g-5 align-items-center">
             <div class="col-lg-6">
-              <p class="eyebrow mb-3"><i class="bi bi-compass-fill"></i> Metodo</p>
-              <h2 class="section-title text-white mb-4">Un impatto preciso, non caos cosmico.</h2>
+              <p class="eyebrow mb-3"><i class="bi bi-compass-fill"></i> Il metodo</p>
+              <h2 class="section-title text-white mb-4">Un impatto preciso,<br>non un progetto infinito.</h2>
               <p class="text-white-50 mb-4">
-                Partiamo dal modo in cui il lavoro avviene davvero: responsabilita, dati, eccezioni, tempi e rischi. Poi trasformiamo cio che e ripetibile in automazione utile.
+                Partiamo dal modo in cui il lavoro avviene davvero — responsabilità, dati, eccezioni, tempi, rischi. Poi trasformiamo in automatico tutto ciò che è ripetibile, e misuriamo il risultato.
               </p>
               <div class="process-panel">
                 <span class="process-chip"><i class="bi bi-search"></i> Audit</span>
@@ -669,28 +628,28 @@
                 <span class="step-number">01</span>
                 <div>
                   <h3 class="h5 fw-bold">Scopriamo i dinosauri</h3>
-                  <p class="text-white-50 mb-0">Interviste rapide, raccolta documenti e lettura dei flussi manuali piu costosi.</p>
+                  <p class="text-white-50 mb-0">Interviste rapide, raccolta documenti e lettura dei flussi manuali più costosi. Niente teorie: osserviamo come funziona davvero.</p>
                 </div>
               </div>
               <div class="timeline-step">
                 <span class="step-number">02</span>
                 <div>
-                  <h3 class="h5 fw-bold">Stimiamo impatto e priorita</h3>
-                  <p class="text-white-50 mb-0">Identifichiamo rischi, tempi persi, errori ricorrenti e opportunita tecniche.</p>
+                  <h3 class="h5 fw-bold">Stimiamo impatto e priorità</h3>
+                  <p class="text-white-50 mb-0">Identifichiamo rischi, tempi persi, errori ricorrenti. Ti diciamo quali tre cose conviene fare subito e perché.</p>
                 </div>
               </div>
               <div class="timeline-step">
                 <span class="step-number">03</span>
                 <div>
-                  <h3 class="h5 fw-bold">Costruiamo lo strumento</h3>
-                  <p class="text-white-50 mb-0">Integrazioni, automazioni o software dedicato, con rilascio progressivo.</p>
+                  <h3 class="h5 fw-bold">Costruiamo e rilasciamo</h3>
+                  <p class="text-white-50 mb-0">Integrazioni, automazioni o software dedicato. Rilascio progressivo: qualcosa funziona in pochi giorni, non dopo sei mesi.</p>
                 </div>
               </div>
               <div class="timeline-step">
                 <span class="step-number">04</span>
                 <div>
                   <h3 class="h5 fw-bold">Misuriamo il cambiamento</h3>
-                  <p class="text-white-50 mb-0">Indicatori semplici per capire cosa e migliorato e dove conviene intervenire ancora.</p>
+                  <p class="text-white-50 mb-0">Indicatori semplici per capire cosa è migliorato. Poi decidiamo insieme dove intervenire ancora.</p>
                 </div>
               </div>
             </div>
@@ -698,36 +657,37 @@
         </div>
       </section>
 
+      <!-- RISULTATI -->
       <section id="risultati" class="section-pad bg-white">
         <div class="container">
           <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
               <p class="section-kicker mb-2">Risultati</p>
-              <h2 class="section-title mb-4">Meno attrito operativo, piu controllo.</h2>
+              <h2 class="section-title mb-4">Meno attrito operativo.<br>Più controllo su tutto.</h2>
               <p class="text-secondary">
-                Ogni intervento e pensato per avere un effetto concreto: ridurre passaggi inutili, rendere i dati affidabili e dare alle persone strumenti piu semplici.
+                Ogni intervento è pensato per avere un effetto concreto e misurabile: ridurre passaggi inutili, rendere i dati affidabili e dare alle persone strumenti che non richiedono un manuale.
               </p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-7">
               <div class="outcome">
                 <i class="bi bi-check-circle-fill"></i>
                 <div>
-                  <h3 class="h5 fw-bold">Riduzione degli errori manuali</h3>
-                  <p class="text-secondary mb-0">Regole, controlli e integrazioni al posto di copia-incolla e verifiche ripetute.</p>
+                  <h3 class="h5 fw-bold">Meno errori, meno rilavorazione</h3>
+                  <p class="text-secondary mb-0">Regole, controlli e integrazioni al posto di copia-incolla e verifiche ripetute. I dati arrivano già corretti.</p>
                 </div>
               </div>
               <div class="outcome">
                 <i class="bi bi-check-circle-fill"></i>
                 <div>
-                  <h3 class="h5 fw-bold">Tempi di processo piu brevi</h3>
-                  <p class="text-secondary mb-0">Flussi rapidi per approvazioni, report, inserimenti dati, scambi tra sistemi e attivita ricorrenti.</p>
+                  <h3 class="h5 fw-bold">Processi più veloci, persone più libere</h3>
+                  <p class="text-secondary mb-0">Approvazioni, report, inserimenti, scambi tra sistemi: tutto scorre senza aspettare qualcuno che faccia una cosa a mano.</p>
                 </div>
               </div>
               <div class="outcome">
                 <i class="bi bi-check-circle-fill"></i>
                 <div>
-                  <h3 class="h5 fw-bold">Sistemi collegati e dati migliori</h3>
-                  <p class="text-secondary mb-0">Dashboard, export e tracciabilita per vedere cosa succede senza inseguire informazioni tra strumenti diversi.</p>
+                  <h3 class="h5 fw-bold">Visibilità in tempo reale</h3>
+                  <p class="text-secondary mb-0">Sai cosa sta succedendo senza rincorrere aggiornamenti tra email, fogli e riunioni. I dati sono in un posto solo, sempre aggiornati.</p>
                 </div>
               </div>
             </div>
@@ -735,64 +695,225 @@
         </div>
       </section>
 
+
+      <!-- FAQ SEO / AI -->
+      <section id="faq" class="section-pad bg-white">
+        <div class="container">
+          <div class="row align-items-start g-5">
+            <div class="col-lg-4">
+              <p class="section-kicker mb-2">Domande frequenti</p>
+              <h2 class="section-title mb-3">Risposte rapide per capire se possiamo aiutarti.</h2>
+              <p class="text-secondary mb-0">Questa sezione aiuta anche Google e i motori AI a interpretare meglio cosa fa Asteroid e per quali problemi è rilevante.</p>
+            </div>
+            <div class="col-lg-8">
+              <div class="accordion" id="faqAsteroid">
+
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="faq1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                      Quanto costa automatizzare un processo aziendale?
+                    </button>
+                  </h3>
+                  <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAsteroid">
+                    <div class="accordion-body text-secondary">
+                      Il costo dipende da sistemi coinvolti, regole, eccezioni e livello di integrazione necessario. Per questo Asteroid parte da un audit o da uno sprint con scope definito, così il preventivo è legato a un risultato concreto.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                      Quanto tempo serve per vedere un primo risultato?
+                    </button>
+                  </h3>
+                  <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAsteroid">
+                    <div class="accordion-body text-secondary">
+                      Per interventi mirati come integrazioni semplici, report automatici o eliminazione di passaggi manuali ricorrenti, il primo rilascio può arrivare in poche settimane. I progetti più ampi vengono divisi in sprint progressivi.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="faq3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                      Asteroid sostituisce i software che uso già?
+                    </button>
+                  </h3>
+                  <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAsteroid">
+                    <div class="accordion-body text-secondary">
+                      No. L&#x27;obiettivo è valorizzare gli strumenti già presenti, come CRM, ERP, gestionali, e-commerce, fogli, database e API, collegandoli tra loro quando possibile.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="faq4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                      Che tipo di aziende può aiutare Asteroid?
+                    </button>
+                  </h3>
+                  <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAsteroid">
+                    <div class="accordion-body text-secondary">
+                      Asteroid lavora con PMI che hanno processi ripetitivi, dati duplicati, passaggi manuali tra sistemi, report costruiti a mano o strumenti non collegati tra loro.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ARTICOLI -->
+      <section id="articoli" class="section-pad bg-white">
+        <div class="container">
+          <div class="row align-items-end mb-5 gy-3">
+            <div class="col-lg-7">
+              <p class="section-kicker mb-2">Articoli</p>
+              <h2 class="section-title mb-0">Guide pratiche sui rischi dei processi manuali.</h2>
+            </div>
+            <div class="col-lg-5">
+              <p class="text-secondary mb-0">Contenuti pensati per intercettare ricerche su costi nascosti, perdita dati, demotivazione, errori operativi, report manuali e integrazioni tra sistemi.</p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-4">
+              <article class="article-preview-card">
+                <a href="articoli/costi-nascosti-operazioni-manuali.html">
+                  <p class="article-preview-meta mb-2">Costi operativi</p>
+                  <h3 class="h5 fw-bold mb-3">I costi nascosti delle operazioni manuali in azienda</h3>
+                  <p class="text-secondary mb-3">Scopri dove si nascondono i costi delle operazioni manuali: tempo perso, rilavorazioni, errori, colli di bottiglia e decisioni lente.</p>
+                  <span class="service-more">Leggi l'articolo <i class="bi bi-arrow-right"></i></span>
+                </a>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <article class="article-preview-card">
+                <a href="articoli/rischi-perdita-dati-processi-manuali.html">
+                  <p class="article-preview-meta mb-2">Rischio dati</p>
+                  <h3 class="h5 fw-bold mb-3">Perdita di dati: perché i processi manuali aumentano il rischio</h3>
+                  <p class="text-secondary mb-3">I passaggi manuali aumentano il rischio di dati persi, duplicati, non aggiornati o non tracciabili. Ecco come ridurlo.</p>
+                  <span class="service-more">Leggi l'articolo <i class="bi bi-arrow-right"></i></span>
+                </a>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <article class="article-preview-card">
+                <a href="articoli/perdita-personale-conoscenza-operativa.html">
+                  <p class="article-preview-meta mb-2">Continuità operativa</p>
+                  <h3 class="h5 fw-bold mb-3">Quando una persona se ne va: il rischio della conoscenza operativa non documentata</h3>
+                  <p class="text-secondary mb-3">Le aziende perdono efficienza quando procedure, eccezioni e trucchi operativi restano nella testa di poche persone.</p>
+                  <span class="service-more">Leggi l'articolo <i class="bi bi-arrow-right"></i></span>
+                </a>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <article class="article-preview-card">
+                <a href="articoli/demotivazione-lavoro-ripetitivo.html">
+                  <p class="article-preview-meta mb-2">Persone e produttività</p>
+                  <h3 class="h5 fw-bold mb-3">Lavoro ripetitivo e demotivazione: il costo umano dei processi manuali</h3>
+                  <p class="text-secondary mb-3">Le attività ripetitive riducono attenzione, motivazione e qualità del lavoro. Automatizzare libera tempo per attività a maggior valore.</p>
+                  <span class="service-more">Leggi l'articolo <i class="bi bi-arrow-right"></i></span>
+                </a>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <article class="article-preview-card">
+                <a href="articoli/errori-copia-incolla-aziendali.html">
+                  <p class="article-preview-meta mb-2">Qualità operativa</p>
+                  <h3 class="h5 fw-bold mb-3">Errori di copia-incolla: piccoli sbagli che diventano problemi aziendali</h3>
+                  <p class="text-secondary mb-3">Il copia-incolla tra sistemi crea errori, duplicazioni e controlli infiniti. Ecco perché conviene sostituirlo con integrazioni e regole automatiche.</p>
+                  <span class="service-more">Leggi l'articolo <i class="bi bi-arrow-right"></i></span>
+                </a>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <article class="article-preview-card">
+                <a href="articoli/report-manuali-decisioni-lente.html">
+                  <p class="article-preview-meta mb-2">Report e controllo</p>
+                  <h3 class="h5 fw-bold mb-3">Report manuali: perché rallentano le decisioni e nascondono problemi</h3>
+                  <p class="text-secondary mb-3">I report creati a mano fanno perdere tempo, aumentano il rischio di errore e rendono le decisioni meno tempestive.</p>
+                  <span class="service-more">Leggi l'articolo <i class="bi bi-arrow-right"></i></span>
+                </a>
+              </article>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <a class="btn btn-asteroid btn-lg px-4" href="articoli.html"><i class="bi bi-journal-text me-2"></i> Vedi tutti gli articoli</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA / CONTATTO -->
       <section id="contatto" class="section-pad cta-band">
         <div class="container">
           <div class="row g-5 align-items-center">
             <div class="col-lg-6">
-              <p class="eyebrow mb-3"><i class="bi bi-meteor"></i> Primo impatto</p>
-              <h2 class="section-title text-white mb-4">Scopri quali dinosauri stanno rallentando la tua azienda.</h2>
+              <p class="eyebrow mb-3"><i class="bi bi-meteor"></i> Inizia oggi</p>
+              <h2 class="section-title text-white mb-4">Scopri quali processi stanno costando più di quello che credi.</h2>
               <p class="text-white-50 mb-4">
-                Raccontaci il processo che vuoi migliorare: amministrazione, vendite, produzione, assistenza, reportistica o qualunque flusso ancora troppo manuale.
+                Raccontaci il flusso che vuoi migliorare — amministrazione, vendite, produzione, assistenza, reportistica o qualunque procedura ancora troppo manuale. La prima analisi è gratuita.
               </p>
               <a class="btn btn-asteroid btn-lg px-4" href="mailto:info@asteroid.it?subject=Richiesta%20analisi%20processi%20Asteroid">
                 <i class="bi bi-envelope-fill me-2"></i> info@asteroid.it
               </a>
             </div>
             <div class="col-lg-6">
-              <form class="contact-card">
+              <div class="contact-card">
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label text-white" for="name">Nome</label>
                     <input class="form-control" id="name" type="text" placeholder="Il tuo nome">
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label text-white" for="email">Email</label>
+                    <label class="form-label text-white" for="email">Email aziendale</label>
                     <input class="form-control" id="email" type="email" placeholder="nome@azienda.it">
                   </div>
                   <div class="col-12">
-                    <label class="form-label text-white" for="area">Area da migliorare</label>
+                    <label class="form-label text-white" for="area">Cosa vorresti migliorare?</label>
                     <select class="form-select" id="area">
-                      <option selected>Procedure manuali</option>
-                      <option>Automazioni ripetitive</option>
+                      <option value="">Seleziona un'area...</option>
+                      <option>Procedure e passaggi manuali</option>
+                      <option>Automazione di attività ripetitive</option>
                       <option>Integrazioni tra sistemi</option>
                       <option>Software su misura</option>
-                      <option>Analisi di processi</option>
+                      <option>Analisi dei processi aziendali</option>
+                      <option>Non so ancora, ho bisogno di un confronto</option>
                     </select>
                   </div>
                   <div class="col-12">
-                    <label class="form-label text-white" for="message">Messaggio</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Descrivi il processo, i problemi e gli obiettivi"></textarea>
+                    <label class="form-label text-white" for="message">Descrivici il problema</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Quali sistemi usi? Dove perdi più tempo? Qual è il tuo obiettivo?"></textarea>
                   </div>
                   <div class="col-12">
-                    <a class="btn btn-asteroid w-100" href="mailto:info@asteroid.it?subject=Richiesta%20analisi%20processi%20Asteroid">
-                      <i class="bi bi-send-fill me-2"></i> Richiedi una valutazione
+                    <a class="btn btn-asteroid w-100 py-3" href="mailto:info@asteroid.it?subject=Richiesta%20analisi%20processi%20Asteroid">
+                      <i class="bi bi-send-fill me-2"></i> Invia la richiesta
                     </a>
+                    <p class="text-white-50 text-center small mt-2 mb-0">Risposta entro 24 ore. Nessun impegno.</p>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="py-4">
       <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
         <div class="d-flex align-items-center gap-2">
-          <img class="brand-mark" src="assets/asteroid-logo.svg" alt="">
-          <span class="fw-bold text-white">Asteroid</span>
+          <img class="brand-mark" src="assets/asteroid-logo.svg" alt="" style="width:30px;height:30px;">
+          <span class="fw-bold text-white" style="font-family:'Syne',sans-serif;">Asteroid</span>
         </div>
-        <span>Servizi IT, integrazioni, automazione e analisi processi.</span>
+        <span class="small">Integrazioni, automazioni, analisi processi e software su misura per PMI.</span>
+        <div class="d-flex gap-3 small">
+          <a class="text-white-50" href="pacchetti.html">Pacchetti</a>
+          <a class="text-white-50" href="privacy.html">Privacy</a>
+          <a class="text-white-50" href="mailto:info@asteroid.it">info@asteroid.it</a>
+        </div>
       </div>
     </footer>
 

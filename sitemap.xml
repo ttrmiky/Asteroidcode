@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.asteroidcode.it/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.asteroidcode.it/pacchetti.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.asteroidcode.it/privacy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://www.asteroidcode.it/servizi/valutazione-procedure-rischi.html</loc><priority>0.85</priority></url>
+  <url><loc>https://www.asteroidcode.it/servizi/automazione-procedure.html</loc><priority>0.85</priority></url>
+  <url><loc>https://www.asteroidcode.it/servizi/integrazioni-sistemi.html</loc><priority>0.85</priority></url>
+  <url><loc>https://www.asteroidcode.it/servizi/software-efficienza.html</loc><priority>0.85</priority></url>
+  <url><loc>https://www.asteroidcode.it/servizi/analisi-processi.html</loc><priority>0.85</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/costi-nascosti-operazioni-manuali.html</loc><priority>0.75</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/rischi-perdita-dati-processi-manuali.html</loc><priority>0.75</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/perdita-personale-conoscenza-operativa.html</loc><priority>0.75</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/demotivazione-lavoro-ripetitivo.html</loc><priority>0.75</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/errori-copia-incolla-aziendali.html</loc><priority>0.75</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/report-manuali-decisioni-lente.html</loc><priority>0.75</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/sistemi-non-integrati-crm-erp-ecommerce.html</loc><priority>0.75</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/colli-di-bottiglia-approvazioni-email.html</loc><priority>0.75</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/qualita-dati-decisioni-aziendali.html</loc><priority>0.75</priority></url>
+  <url><loc>https://www.asteroidcode.it/articoli/quando-automatizzare-processo-aziendale.html</loc><priority>0.75</priority></url>
+</urlset>

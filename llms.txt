@@ -1,0 +1,36 @@
+# Asteroid
+
+Asteroid aiuta le PMI a eliminare processi manuali, copia-incolla, duplicazione dati ed errori operativi tramite analisi processi, integrazioni tra sistemi, automazioni e software su misura.
+
+## Servizi principali
+- Analisi processi aziendali
+- Valutazione procedure e rischi operativi
+- Integrazioni tra CRM, ERP, gestionali, e-commerce, fogli, database e API
+- Automazione procedure ripetitive
+- Software interno per efficienza operativa
+- Supporto continuativo e miglioramento dei processi
+
+## Pagine importanti
+- Home: https://www.asteroidcode.it/
+- Pacchetti: https://www.asteroidcode.it/pacchetti.html
+- Analisi di processo: https://www.asteroidcode.it/servizi/analisi-processi.html
+- Integrazioni: https://www.asteroidcode.it/servizi/integrazioni-sistemi.html
+- Automazioni: https://www.asteroidcode.it/servizi/automazione-procedure.html
+- Software efficienza: https://www.asteroidcode.it/servizi/software-efficienza.html
+
+## Contatti
+Email: info@asteroid.it
+
+
+## Articoli e guide
+- /articoli.html: indice degli articoli su rischi, costi e automazione dei processi manuali.
+- /articoli/costi-nascosti-operazioni-manuali.html: costi nascosti delle operazioni manuali.
+- /articoli/rischi-perdita-dati-processi-manuali.html: perdita dati nei processi manuali.
+- /articoli/perdita-personale-conoscenza-operativa.html: continuità operativa e conoscenza non documentata.
+- /articoli/demotivazione-lavoro-ripetitivo.html: impatto del lavoro ripetitivo sulla motivazione.
+- /articoli/errori-copia-incolla-aziendali.html: rischi del copia-incolla tra sistemi.
+- /articoli/report-manuali-decisioni-lente.html: report manuali e decisioni lente.
+- /articoli/sistemi-non-integrati-crm-erp-ecommerce.html: sistemi aziendali non integrati.
+- /articoli/colli-di-bottiglia-approvazioni-email.html: approvazioni via email e colli di bottiglia.
+- /articoli/qualita-dati-decisioni-aziendali.html: qualità dati e decisioni aziendali.
+- /articoli/quando-automatizzare-processo-aziendale.html: criteri per scegliere cosa automatizzare.
