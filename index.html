@@ -24,8 +24,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">    <style>
       :root {
         --space:  #0e1220;
         --ink:    #1a2035;
@@ -41,20 +40,22 @@
       *, *::before, *::after { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
 
-      body {
-        color: var(--ink);
-        background: var(--paper);
-        font-family: 'DM Sans', system-ui, sans-serif;
-        font-size: 1rem;
-        line-height: 1.65;
-        -webkit-font-smoothing: antialiased;
-      }
+        body {
+            color: var(--ink);
+            background: var(--paper);
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1rem;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
 
-      h1,h2,h3,h4,h5,h6 {
-        font-family: 'Syne', sans-serif;
-        letter-spacing: -0.02em;
-      }
-
+        h1, h2, h3, h4, h5, h6,
+        .navbar-brand,
+        .btn,
+        .eyebrow,
+        .section-kicker {
+            font-family: 'Space Grotesk', sans-serif;
+        }
       /* NAVBAR */
       .navbar {
         background: rgba(14,18,32,0.9);
@@ -848,56 +849,65 @@
 
       <!-- CTA / CONTATTO -->
       <section id="contatto" class="section-pad cta-band">
-        <div class="container">
-          <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-              <p class="eyebrow mb-3"><i class="bi bi-meteor"></i> Inizia oggi</p>
-              <h2 class="section-title text-white mb-4">Scopri quali processi stanno costando più di quello che credi.</h2>
-              <p class="text-white-50 mb-4">
-                Raccontaci il flusso che vuoi migliorare — amministrazione, vendite, produzione, assistenza, reportistica o qualunque procedura ancora troppo manuale. La prima analisi è gratuita.
-              </p>
-              <a class="btn btn-asteroid btn-lg px-4" href="mailto:info@asteroid.it?subject=Richiesta%20analisi%20processi%20Asteroid">
-                <i class="bi bi-envelope-fill me-2"></i> info@asteroid.it
-              </a>
-            </div>
-            <div class="col-lg-6">
-              <div class="contact-card">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label text-white" for="name">Nome</label>
-                    <input class="form-control" id="name" type="text" placeholder="Il tuo nome">
+          <div class="container">
+              <div class="row g-5 align-items-center">
+                  <div class="col-lg-6">
+                      <p class="eyebrow mb-3"><i class="bi bi-meteor"></i> Inizia oggi</p>
+                      <h2 class="section-title text-white mb-4">Scopri quali processi stanno costando più di quello che credi.</h2>
+                      <p class="text-white-50 mb-4">
+                          Raccontaci il flusso che vuoi migliorare — amministrazione, vendite, produzione, assistenza, reportistica o qualunque procedura ancora troppo manuale. La prima analisi è gratuita.
+                      </p>
+                      <a class="btn btn-asteroid btn-lg px-4" href="mailto:info@asteroidcode.it?subject=Richiesta%20analisi%20processi%20Asteroid">
+                          <i class="bi bi-envelope-fill me-2"></i> info@asteroidcode.it
+                      </a>
                   </div>
-                  <div class="col-md-6">
-                    <label class="form-label text-white" for="email">Email aziendale</label>
-                    <input class="form-control" id="email" type="email" placeholder="nome@azienda.it">
+
+                  <div class="col-lg-6">
+                      <div class="contact-card">
+                          <form action="https://www.saveform.io/api/submit/9df4277d-8927-4e56-9626-50e7be0a3587" method="POST">
+                              <div class="row g-3">
+                                  <div class="col-md-6">
+                                      <label class="form-label text-white" for="name">Nome</label>
+                                      <input class="form-control" id="name" name="name" type="text" placeholder="Il tuo nome" required>
+                                  </div>
+
+                                  <div class="col-md-6">
+                                      <label class="form-label text-white" for="email">Email aziendale</label>
+                                      <input class="form-control" id="email" name="email" type="email" placeholder="nome@azienda.it" required>
+                                  </div>
+
+                                  <div class="col-12">
+                                      <label class="form-label text-white" for="area">Cosa vorresti migliorare?</label>
+                                      <select class="form-select" id="area" name="area" required>
+                                          <option value="">Seleziona un'area...</option>
+                                          <option value="Procedure e passaggi manuali">Procedure e passaggi manuali</option>
+                                          <option value="Automazione di attività ripetitive">Automazione di attività ripetitive</option>
+                                          <option value="Integrazioni tra sistemi">Integrazioni tra sistemi</option>
+                                          <option value="Software su misura">Software su misura</option>
+                                          <option value="Analisi dei processi aziendali">Analisi dei processi aziendali</option>
+                                          <option value="Non so ancora, ho bisogno di un confronto">Non so ancora, ho bisogno di un confronto</option>
+                                      </select>
+                                  </div>
+
+                                  <div class="col-12">
+                                      <label class="form-label text-white" for="message">Descrivici il problema</label>
+                                      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Quali sistemi usi? Dove perdi più tempo? Qual è il tuo obiettivo?" required></textarea>
+                                  </div>
+
+                                  <input type="hidden" name="_subject" value="Nuova richiesta analisi processi Asteroid">
+
+                                  <div class="col-12">
+                                      <button class="btn btn-asteroid w-100 py-3" type="submit">
+                                          <i class="bi bi-send-fill me-2"></i> Invia la richiesta
+                                      </button>
+                                      <p class="text-white-50 text-center small mt-2 mb-0">Risposta entro 24 ore. Nessun impegno.</p>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
                   </div>
-                  <div class="col-12">
-                    <label class="form-label text-white" for="area">Cosa vorresti migliorare?</label>
-                    <select class="form-select" id="area">
-                      <option value="">Seleziona un'area...</option>
-                      <option>Procedure e passaggi manuali</option>
-                      <option>Automazione di attività ripetitive</option>
-                      <option>Integrazioni tra sistemi</option>
-                      <option>Software su misura</option>
-                      <option>Analisi dei processi aziendali</option>
-                      <option>Non so ancora, ho bisogno di un confronto</option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label text-white" for="message">Descrivici il problema</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Quali sistemi usi? Dove perdi più tempo? Qual è il tuo obiettivo?"></textarea>
-                  </div>
-                  <div class="col-12">
-                    <a class="btn btn-asteroid w-100 py-3" href="mailto:info@asteroid.it?subject=Richiesta%20analisi%20processi%20Asteroid">
-                      <i class="bi bi-send-fill me-2"></i> Invia la richiesta
-                    </a>
-                    <p class="text-white-50 text-center small mt-2 mb-0">Risposta entro 24 ore. Nessun impegno.</p>
-                  </div>
-                </div>
               </div>
-            </div>
           </div>
-        </div>
       </section>
 
     </main>
