@@ -1,6 +1,6 @@
-# Asteroid
+# Asteroid Code
 
-Asteroid aiuta le PMI a eliminare processi manuali, copia-incolla, duplicazione dati ed errori operativi tramite analisi processi, integrazioni tra sistemi, automazioni e software su misura.
+Asteroid Code aiuta le PMI a eliminare processi manuali, copia-incolla, duplicazione dati ed errori operativi tramite analisi processi, integrazioni tra sistemi, automazioni e software su misura.
 
 ## Servizi principali
 - Analisi processi aziendali

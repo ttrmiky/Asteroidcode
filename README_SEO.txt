@@ -1,33 +1,23 @@
-ASTEROID - VERSIONE SEO READY
+ASTEROID CODE - NOTE SEO
 
-Cosa è stato sistemato:
-1. Title e meta description più mirati.
-2. Canonical URL.
-3. Meta robots.
-4. Open Graph e Twitter Card.
-5. Dati strutturati JSON-LD per Organization, WebSite, Service, FAQ e pagine servizio.
-6. Sezione FAQ visibile in homepage.
-7. Pagine servizio create per evitare link rotti:
-   - servizi/valutazione-procedure-rischi.html
-   - servizi/automazione-procedure.html
-   - servizi/integrazioni-sistemi.html
-   - servizi/software-efficienza.html
-   - servizi/analisi-processi.html
-8. robots.txt.
-9. sitemap.xml.
-10. llms.txt per rendere il sito più leggibile anche dai motori AI.
-11. background-options.html impostata noindex perché è una pagina interna di lavoro.
-12. privacy.html base da completare con i dati legali reali.
+Interventi già applicati:
+1. Title, meta description e canonical URL sulle pagine indicizzabili.
+2. Meta robots con max-image-preview sulle pagine pubbliche.
+3. Open Graph e Twitter Card uniformati su home, pacchetti, servizi e articoli.
+4. Immagine social dedicata: assets/og-image.svg.
+5. og:image:alt e twitter:image:alt per migliorare contesto e accessibilità.
+6. hreflang it e x-default per ogni canonical indicizzabile.
+7. Dati strutturati JSON-LD per Organization, WebSite, Service, Article e FAQPage.
+8. Sitemap aggiornata con lastmod 2026-05-28.
+9. robots.txt con riferimento alla sitemap.
+10. llms.txt per rendere il sito più leggibile anche ai motori AI.
+11. background-options.html mantenuta noindex perché è una pagina interna di lavoro.
+12. CSS locale consolidato in un solo file: assets/site.css.
+13. Test statici per metadati, link interni, JSON-LD, H1, sitemap e CSS unico.
 
-DA FARE PRIMA DI PUBBLICARE:
-- Se il dominio finale NON è https://www.asteroidcode.it, cerca e sostituisci questo dominio in tutti i file.
-- Completa privacy.html con ragione sociale, P.IVA, sede e titolare del trattamento.
-- Verifica che tutte le immagini in /assets esistano nel progetto.
-- Carica sitemap.xml su Google Search Console.
-- Pubblica il sito con HTTPS attivo.
-
-
-Sezione articoli aggiunta:
-- articoli.html è l’indice editoriale.
-- La cartella articoli/ contiene 10 pagine articolo ottimizzate con title, meta description, canonical, Article schema e FAQPage schema.
-- La homepage contiene una sezione anteprima con 6 articoli e link alla raccolta completa.
+Da fare prima della pubblicazione:
+- Completare privacy.html con ragione sociale, P.IVA, sede e titolare del trattamento.
+- Sostituire l'immagine social SVG con una PNG 1200x630 se vuoi massima compatibilità con LinkedIn, WhatsApp e crawler social più rigidi.
+- Verificare in Google Search Console sitemap.xml e copertura delle pagine.
+- Controllare Core Web Vitals dopo la pubblicazione HTTPS.
+- Se il dominio finale cambia, sostituire https://www.asteroidcode.it in tutti i file.
