@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Asteroid logo</title>
+  <desc id="desc">A stylized letter A shaped like a dinosaur with an asteroid.</desc>
+  <defs>
+    <linearGradient id="badge" x1="18" y1="118" x2="112" y2="15" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0d111d"/>
+      <stop offset="0.58" stop-color="#17363d"/>
+      <stop offset="1" stop-color="#ff6b4a"/>
+    </linearGradient>
+    <linearGradient id="meteor" x1="89" y1="15" x2="112" y2="39" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff6cf"/>
+      <stop offset="0.45" stop-color="#ffb84d"/>
+      <stop offset="1" stop-color="#ff5b3d"/>
+    </linearGradient>
+    <filter id="glow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#badge)"/>
+  <path d="M104 15 80 38M113 27 86 48M118 40 95 58" stroke="#ffb84d" stroke-width="5" stroke-linecap="round" opacity="0.92"/>
+  <circle cx="101" cy="30" r="12" fill="url(#meteor)" filter="url(#glow)"/>
+  <path d="M26 103 58 27c2-5 9-5 11 0l33 76H84l-7-18H50l-7 18H26Z" fill="#f8f7f2"/>
+  <path d="M57 67h13L64 48l-7 19Z" fill="#17363d"/>
+  <path d="M76 48c10-5 20-2 26 8l-12 6c-3-5-8-8-14-8V48Z" fill="#f8f7f2"/>
+  <path d="M91 55h9M87 62h9" stroke="#111625" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="86" cy="51" r="2.4" fill="#111625"/>
+  <path d="M50 82c-10 3-18 0-25-8" stroke="#f8f7f2" stroke-width="9" stroke-linecap="round"/>
+  <path d="M45 101v13M85 101v13M53 86l-9 10M75 86l9 10" stroke="#f8f7f2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M78 41c6 8 11 15 18 23M71 48c7 6 13 13 17 21" stroke="#ff6b4a" stroke-width="4" stroke-linecap="round"/>
+</svg>
